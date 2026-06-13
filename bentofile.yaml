@@ -1,0 +1,11 @@
+service: "service.py:IrisClassifier"
+labels:
+  owner: Navs
+  project: MLFlow - BentoML
+include:
+- "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas
+    - numpy
